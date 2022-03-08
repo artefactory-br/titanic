@@ -30,9 +30,11 @@ def list_blobs_with_prefix(bucket_name, prefix, delimiter=None):
 
 def read_dataframe_from_bucket_file(bucket_name, filename, sep=";"):
     """Read a file in a bucket folder and return a dataframe.
+
     Parameters:
     bucket_name   -- name of the Google Storage bucket
     filename      -- path to file ex.: 'root_folder/first_child/second_child/filename.ext'
+
     Output:
     Returns a dataframe with the data from the bucket file
     """
