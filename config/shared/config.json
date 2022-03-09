@@ -1,0 +1,13 @@
+{
+    "params": {
+        "cleaning": {
+            "filna_map": {
+                "Age": "mean"
+            },
+            "filter_cols": []
+        },
+        "feature_eng": {
+            "dummify_feature": []
+        }
+    }
+}
