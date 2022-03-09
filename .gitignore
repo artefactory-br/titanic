@@ -3,3 +3,4 @@ venv/
 config/local/
 .env
 __pycache__
+.checkpoints
