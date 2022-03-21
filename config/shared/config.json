@@ -4,7 +4,17 @@
             "filna_map": {
                 "Age": "mean"
             },
-            "filter_cols": []
+            "filter_cols": [
+                "PassengerId",
+                "Pclass",
+                "Sex",
+                "Age",
+                "SibSp",
+                "Parch",
+                "Fare",
+                "Embarked",
+                "Survived"
+            ]
         },
         "feature_eng": {
             "dummify_feature": []
