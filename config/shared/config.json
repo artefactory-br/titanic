@@ -17,7 +17,14 @@
             ]
         },
         "feature_eng": {
-            "dummify_feature": []
+            "dummify_feature": [
+                "Pclass",
+                "Sex",
+                "Embarked"
+            ]
+        },
+        "modelling": {
+            "save_path": "models/{}"
         }
     }
 }
