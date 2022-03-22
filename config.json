@@ -24,7 +24,25 @@
             ]
         },
         "modelling": {
-            "save_path": "models/{}"
+            "name": "survival_classifier",
+            "save_path": "models/{}",
+            "target": "Survived",
+            "cv_folds": 10,
+            "numeric_features": [
+                "Age",
+                "Fare",
+                "SibSp",
+                "Parch"
+            ],
+            "train_size": 0.75,
+            "normalize": 1,
+            "ignore_low_variance": 1,
+            "combine_rare_levels": 1,
+            "remove_multicollinearity": 1,
+            "feature_selection": 1,
+            "silent": 1,
+            "optimize_metric": "F1",
+            "optimize_iter": 15
         }
     }
 }

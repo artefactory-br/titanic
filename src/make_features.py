@@ -6,12 +6,12 @@ email       : wedeueis.braz@artefact.com
 
 import pandas as pd
 
-from src.config import shared_config
+from src.config import config
 
 
 def create_new_features(df):
     df = feature_alone(df)
-    df = feature_dummies(df, shared_config["params"]["feature_eng"]["dummify_feature"])
+    df = feature_dummies(df, config["params"]["feature_eng"]["dummify_feature"])
     return df[
         [
             "PassengerId",

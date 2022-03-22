@@ -4,12 +4,12 @@ maintainer  : Wedeueis Braz
 email       : wedeueis.braz@artefact.com
 """
 
-from src.config import shared_config
+from src.config import config
 
 
 def clean(df, cols=None):
     if cols is None:
-        df = filter_cols(df, shared_config["params"]["cleaning"]["filter_cols"])
+        df = filter_cols(df, config["params"]["cleaning"]["filter_cols"])
     else:
         df = filter_cols(df, cols)
 

@@ -8,11 +8,12 @@ import os
 
 from pycaret.classification import load_model
 
-from src.config import project_root, shared_config
+from src.config import project_root, config
 
+modelling_config = config["params"]["modelling"]
 model_save_path = os.path.join(
     project_root,
-    shared_config["params"]["modelling"]["save_path"].format("survival_classifier"),
+    modelling_config["save_path"].format(modelling_config["name"]),
 )
 
 
