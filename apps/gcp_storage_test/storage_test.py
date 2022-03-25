@@ -1,5 +1,5 @@
 import sys
-from os import path
+import os
 import json
 
 PROJECT_ROOT = os.path.abspath(
@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from src.utils.datasource import read_dataframe_from_bucket_file
+from src.datasource import read_dataframe_from_bucket_file
 
 FILENAME = "path-to-the-file"
 BUCKET_NAME = "<path-to_your-bucket>"
