@@ -21,11 +21,12 @@ from src.prediction import predict
 
 def run_prediction():
     df = pd.read_csv(os.path.join(PROJECT_ROOT, "data/raw/test.csv"))
-    df.set_index("PassengerId")
+
     df["Survived"] = np.nan
     df = clean(df)
     df = create_new_features(df)
     df["Survived"] = predict(df)
+    df.set_index("PassengerId", inplace=True)
     df[["Survived"]].to_csv(os.path.join(PROJECT_ROOT, "data/outputs/prediction.csv"))
 
 
