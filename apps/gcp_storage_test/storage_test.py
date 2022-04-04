@@ -1,6 +1,5 @@
 import sys
 import os
-import json
 
 PROJECT_ROOT = os.path.abspath(
     os.path.join(os.path.dirname(__file__), os.pardir, os.pardir)
@@ -13,7 +12,7 @@ load_dotenv()
 
 from src.datasource import read_dataframe_from_bucket_file
 
-FILENAME = "path-to-the-file"
-BUCKET_NAME = "<path-to_your-bucket>"
+FILENAME = "<path-to-the-file>"
+BUCKET_NAME = "<bucket-name>"
 
 print(read_dataframe_from_bucket_file(BUCKET_NAME, FILENAME, sep=","))
